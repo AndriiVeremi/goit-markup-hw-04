@@ -57,6 +57,7 @@ body {
 .header-nav {
   display: flex;
   align-items: center;
+  
 }
 
 /* Стилі шапки сайту */
@@ -113,10 +114,18 @@ body {
 /* Стилі головного блока */
 
 .hero {
-  padding-top: 200px;
+  height: 600px;
+max-width: 1600px; 
+   background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) ), url('../images/hero_img.jpg');
+  margin: 0 auto;
+   padding-top: 200px;
   padding-bottom: 200px;
-  background-color: var(--dark-background-color);
   text-align: center;
+  background-color: var(--dark-background-color);
+ 
+ background-repeat: no-repeat;
+  background-position: center;
+   
 }
 
 .hero-title {
