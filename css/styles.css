@@ -113,10 +113,18 @@ body {
 /* Стилі головного блока */
 
 .hero {
+  height: 600px;
+  max-width: 1600px;  
+  background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) ), url('../images/hero_img.jpg');
+  margin: 0 auto;
   padding-top: 200px;
   padding-bottom: 200px;
-  background-color: var(--dark-background-color);
   text-align: center;
+  background-color: var(--dark-background-color);
+ 
+  background-repeat: no-repeat;
+  background-position: center;
+   
 }
 
 .hero-title {
@@ -142,6 +150,7 @@ body {
   letter-spacing: 0.06em;
   color: var(--white-color-text);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border: 1px solid transparent;
 }
 
 .section {
@@ -164,6 +173,36 @@ body {
 .info-list .info-item:not(:last-child) {
   margin-right: 30px;
 }
+
+.info-item::before {
+  display: block;
+  content: '';
+  margin-bottom: 30px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  height: 120px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #F5F4FA ;
+  border-radius: 4px;
+}
+
+.icon-antena::before {
+  background-image: url(../images/ico/antena.svg);
+}
+
+.icon-clock::before {
+  background-image: url(../images/ico/clock.svg);
+}
+
+.icon-diagram::before {
+  background-image: url(../images/ico/diagram.svg);
+}
+
+.icon-astronaut::before {
+  background-image: url(../images/ico/astronaut.svg);
+}
+
 
 .info-item-title {
   margin-bottom: 10px;
