@@ -109,7 +109,6 @@ body {
   content: '';
   margin-right: 10px;
   cursor: pointer;
-  align-self: flex-end;
 }
 
 .icon-mail::before {
@@ -119,8 +118,8 @@ body {
 }
 
 .icon-tel::before {
-  height: 16px;
   width: 10px;
+  height: 16px;
   background-image: url(../images/icons/tel.svg);
 }
 
@@ -407,17 +406,18 @@ body {
 /* СТИЛІ ПІДВАЛ */
 
 .footer {
+  
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--dark-background-color);
 }
 
 .footer-nav {
+  display: flex;
   margin-bottom: 20px;
 }
 
 .logo-footer {
-  padding-bottom: 20px;
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
@@ -446,6 +446,8 @@ body {
 .footer-adres-item:last-child {
   margin-bottom: 0;
 }
+
+
 
 .footer-contact-item {
   font-size: 14px;
