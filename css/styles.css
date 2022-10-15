@@ -36,7 +36,7 @@ li {
   margin: 0;
 }
 
-/* Стилі сайту */
+/* ОСНОВНІ СТИЛІ */
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -46,7 +46,7 @@ body {
   margin: 0;
 }
 
-/* Стилі контейнера сайту */
+/* СТИЛІ КОНТЕЙНЕРА */
 
 .container {
   width: 1200px;
@@ -55,7 +55,7 @@ body {
   margin: 0 auto;
 }
 
-/* Стилі шапки сайту */
+/* СТИЛІ ШАПКИ САЙТУ */
 
 .header {
   border-bottom: 1px solid #ececec;
@@ -65,8 +65,6 @@ body {
   display: flex;
   align-items: center;
 }
-
-/* Стилі шапки сайту */
 
 .logo-top {
   font-family: 'Raleway';
@@ -117,13 +115,13 @@ body {
 .icon-mail::before {
   width: 16px;
   height: 12px;
-  background-image: url(../images/ico/mail.svg);
+  background-image: url(../images/icons/mail.svg);
 }
 
 .icon-tel::before {
   height: 16px;
   width: 10px;
-  background-image: url(../images/ico/tel.svg);
+  background-image: url(../images/icons/tel.svg);
 }
 
 .header-menu-link:hover,
@@ -137,14 +135,16 @@ body {
   color: var(--blue-primary);
 }
 
-/* Стилі головного блока */
+/* СТИЛІ ГОЛОВНОГО БЛОКА */
 
 .hero {
   height: 600px;
   max-width: 1600px;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url('../images/hero_img.jpg');
-  margin: 0 auto;
+  background-image: linear-gradient(to right, 
+                                  rgba(47, 48, 58, 0.4), 
+                                  rgba(47, 48, 58, 0.4)),
+                                  url('../images/hero_img.jpg');
+  margin: 0 auto; 
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
@@ -185,7 +185,7 @@ body {
   padding-bottom: 94px;
 }
 
-/* Стилі інформаційного блока */
+/* СТИЛІ ІНФОРМАЦІЙНОГО БЛОКА */
 
 .info-title {
   display: none;
@@ -217,19 +217,19 @@ body {
 }
 
 .icon-antena::before {
-  background-image: url(../images/ico/antena.svg);
+  background-image: url(../images/icons/antena.svg);
 }
 
 .icon-clock::before {
-  background-image: url(../images/ico/clock.svg);
+  background-image: url(../images/icons/clock.svg);
 }
 
 .icon-diagram::before {
-  background-image: url(../images/ico/diagram.svg);
+  background-image: url(../images/icons/diagram.svg);
 }
 
 .icon-astronaut::before {
-  background-image: url(../images/ico/astronaut.svg);
+  background-image: url(../images/icons/astronaut.svg);
 }
 
 .info-item-title {
@@ -250,7 +250,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-/* Стилі чим ми займаємося */
+/* СТИЛІ ЧИМ ЗАЙМАЄМОСЯ */
 
 .what-dowedo-list {
   display: flex;
@@ -266,7 +266,7 @@ body {
   text-align: center;
 }
 
-/* Стилі наша команда */
+/* СТИЛІ НАША КОМАНДА */
 
 .team {
   background-color: var(--secondory-background-color);
@@ -292,8 +292,9 @@ body {
   margin-right: 30px;
   margin-bottom: 30px;
   background-color: var(--white-color-text);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+              0px 1px 1px rgba(0, 0, 0, 0.14),
+              0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -339,7 +340,7 @@ body {
 .social-btn {
   display: flex;
   color: #afb1b8;
-  background-color: #fff;
+  background-color: var(--white-color-text);
   height: 44px;
   cursor: pointer;
 }
@@ -347,7 +348,7 @@ body {
 .social-btn:hover {
   background-color: var(--blue-primary);
   border-radius: 50%;
-  fill: #fff;
+  fill: var(--white-color-text);
 }
 
 .button-icon {
@@ -357,10 +358,10 @@ body {
 }
 
 .button-icon:hover {
-  fill: #fff;
+  fill: var(--white-color-text);
 }
 
-/* Стилі наша команда */
+/* СТИЛІ ПОСТІЙНІ КЛІЄНТИ */
 
 .clients-title {
   margin-bottom: 50px;
@@ -382,7 +383,7 @@ body {
 .clients-btn {
   padding: 0;
   color: #afb1b8;
-  background-color: #fff;
+  background-color: var(--white-color-text);
   width: 170px;
   height: 92px;
   cursor: pointer;
@@ -396,14 +397,14 @@ body {
 }
 
 .clients-icon:hover {
-  fill: #2196f3;
+  fill: var(--blue-primary);
 }
 
 .clients-btn:hover {
-  border: 1px solid #2196f3;
+  border: 1px solid var(--blue-primary);
 }
 
-/* Стилі підвал*/
+/* СТИЛІ ПІДВАЛ */
 
 .footer {
   padding-top: 60px;
@@ -466,11 +467,11 @@ body {
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--white-color-text);
   margin-bottom: 20px;
 }
 
-.footer-social {
+.footer-social-list {
   display: flex;
   height: 44px;
   width: 44px;
@@ -480,34 +481,34 @@ body {
   margin-right: 10px;
 }
 
-.footer-social-btn {
+.footer-social-link {
   display: flex;
-  color: #fff;
+  color: var(--white-color-text);
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   height: 44px;
   cursor: pointer;
 }
 
-.footer-social-btn:hover {
+.footer-social-link:hover {
   background-color: var(--blue-primary);
   border-radius: 50%;
-  fill: #fff;
+  fill: var(--white-color-text);
 }
 
-.footer-button-icon {
+.footer-icon {
   width: 44px;
   padding: 12px;
   fill: currentColor;
 }
 
-.footer-button-icon:hover {
-  fill: #fff;
+.footer-icon:hover {
+  fill: var(--white-color-text);
 }
 
 /* ПОРТФОЛІО */
 
-/* Стилі меню портфоліо*/
+/* СТИЛІ МЕНЮ ПОРТФОЛІО */
 
 .portfolio-title {
   display: none;
@@ -522,6 +523,15 @@ body {
 .portfolio-item:not(:last-child) {
   margin-right: 8px;
 }
+
+.portfolio-item:hover,
+.portfolio-item:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
+              0px 1px 2px rgba(0, 0, 0, 0.08), 
+              0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
 
 .portfolio-btn {
   display: inline-block;
@@ -544,7 +554,7 @@ body {
   background-color: var(--blue-primary);
 }
 
-/* Стилі наші роботи */
+/* СТИЛІ НАШІ РОБОТИ */
 
 .portfolio-work-list {
   display: flex;
@@ -555,6 +565,12 @@ body {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
+}
+
+.portfolio-work-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
+              0px 4px 4px rgba(0, 0, 0, 0.06), 
+              1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-work-item:nth-child(3n) {
