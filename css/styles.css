@@ -95,7 +95,7 @@ body {
 
 .header-menu-link,
 .header-contact-link {
-  display: block;
+  display: inline-flex;
   padding-top: 32px;
   padding-bottom: 32px;
   font-weight: 500;
@@ -105,8 +105,7 @@ body {
 }
 
 .header-contact-link::before {
-  display: inline-flex;
-  content: '';
+  content: "";
   margin-right: 10px;
   cursor: pointer;
 }
