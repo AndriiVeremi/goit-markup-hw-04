@@ -46,6 +46,19 @@ body {
   margin: 0;
 }
 
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
 /* СТИЛІ КОНТЕЙНЕРА */
 
 .container {
@@ -184,10 +197,6 @@ body {
 }
 
 /* СТИЛІ ІНФОРМАЦІЙНОГО БЛОКА */
-
-.info-title {
-  display: none;
-}
 
 .info-list {
   display: flex;
@@ -413,10 +422,15 @@ body {
 
 .footer-nav {
   display: flex;
-  margin-bottom: 20px;
+}
+
+.footer-adres {
+margin-right: 70px;
 }
 
 .logo-footer {
+  display: block;
+  margin-bottom: 20px;
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
@@ -460,6 +474,10 @@ body {
   color: var(--blue-primary);
 }
 
+.footer-social {
+  
+}
+
 .footer-social-title {
   font-weight: 700;
   font-size: 14px;
@@ -472,9 +490,8 @@ body {
 
 .footer-social-list {
   display: flex;
-  height: 44px;
-  width: 44px;
 }
+
 
 .footer-social-item:not(:last-child) {
   margin-right: 10px;
@@ -509,10 +526,6 @@ body {
 
 /* СТИЛІ МЕНЮ ПОРТФОЛІО */
 
-.portfolio-title {
-  display: none;
-}
-
 .portfolio-list {
   display: flex;
   justify-content: center;
@@ -530,7 +543,6 @@ body {
               0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
-
 
 .portfolio-btn {
   display: inline-block;
