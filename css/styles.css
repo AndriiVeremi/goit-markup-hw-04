@@ -4,6 +4,7 @@
   --white-color-text: #ffffff;
   --dark-background-color: #2f303a;
   --secondory-background-color: #f5f4fa;
+  --default-color-icon: #afb1b8;
 }
 
 /* Reset styles */
@@ -346,7 +347,7 @@ body {
 
 .social-btn {
   display: flex;
-  color: #afb1b8;
+  color: var(--default-color-icon);
   background-color: var(--white-color-text);
   height: 44px;
   cursor: pointer;
@@ -389,12 +390,12 @@ body {
 
 .clients-btn {
   padding: 0;
-  color: #afb1b8;
+  color: var(--default-color-icon);
   background-color: var(--white-color-text);
   width: 170px;
   height: 92px;
   cursor: pointer;
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--default-color-icon);
   border-radius: 4px;
 }
 .clients-icon {
@@ -474,10 +475,6 @@ margin-right: 70px;
   color: var(--blue-primary);
 }
 
-.footer-social {
-  
-}
-
 .footer-social-title {
   font-weight: 700;
   font-size: 14px;
@@ -491,7 +488,6 @@ margin-right: 70px;
 .footer-social-list {
   display: flex;
 }
-
 
 .footer-social-item:not(:last-child) {
   margin-right: 10px;
