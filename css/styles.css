@@ -108,6 +108,7 @@ body {
 .header-contact {
   display: flex;
   margin-left: auto;
+  color:#757575;
 }
 
 .header-menu .item:not(:last-child),
@@ -126,10 +127,13 @@ body {
   letter-spacing: 0.02em;
 }
 
+
+
 .icon-mail,
 .icon-tel {
   display: flex;
   margin-right: 10px;
+  fill: currentColor;
 }
 
 .icon-mail:hover,
