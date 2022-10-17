@@ -5,6 +5,7 @@
   --dark-background-color: #2f303a;
   --secondory-background-color: #f5f4fa;
   --default-color-icon: #afb1b8;
+  --secondory-color-text: #757575;
 }
 
 /* Reset styles */
@@ -108,7 +109,7 @@ body {
 .header-contact {
   display: flex;
   margin-left: auto;
-  color:#757575;
+  color:var(--secondory-color-text);
 }
 
 .header-menu .item:not(:last-child),
@@ -250,7 +251,7 @@ body {
 .info-list p {
   margin-top: 0;
   margin-bottom: 0;
-  color: #757575;
+  color: var(--secondory-color-text);
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -605,5 +606,5 @@ margin-right: 70px;
   font-size: 16px;
   line-height: 1.8;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--secondory-color-text);
 }
